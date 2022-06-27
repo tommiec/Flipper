@@ -1,0 +1,11 @@
+﻿@model ProfileCreateViewModel
+
+<form asp-controller="Profile" asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="ProfileName"></label>
+        <input asp-for="ProfileName class="form-control" />
+        <span asp-validation-for="ProfileName" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Create</button>
+</form>
